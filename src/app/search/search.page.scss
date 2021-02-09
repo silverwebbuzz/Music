@@ -1,0 +1,60 @@
+.page-search{
+    // --padding-start: 10px;
+    // --padding-end: 10px;
+
+    .lbl-head{
+        font-weight: bold;
+        font-size: 28px;
+        display: block;
+        text-align: center;
+        margin-top: 58px;
+    }
+
+    .item-divider{
+        //height: 38px;
+        padding: 0px;
+        padding-left: 10px;
+        padding-right: 2px;
+        margin: 0px;
+        border-radius: 5px;
+        background: #fff;
+        
+        .search{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    .lbl-divider{
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 5px 10px 5px 10px;
+    }
+}
+.row-card{
+    padding: 0px 5px 0px 5px;
+
+    .col-card{
+        padding: 0px;
+
+        .card-music{
+            margin: 5px;
+            height: 80px;
+
+            .img-music{
+                height: 80px;
+                object-fit: cover;
+            }
+
+            .lbl-title{
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                color: #fff;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+    }
+}

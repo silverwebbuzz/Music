@@ -1,1 +1,187 @@
+.lbl-head{
+    font-weight: bold;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    margin-top: 44px;
+}
+.lbl-line{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0px 20px 0px;
+    padding: 0px 36px;
+}
+.lbl-divider{
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+}
+.lbl-divider-sm{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+}
+.row-card{
+    padding: 0px 5px 0px 5px;
 
+    .col-card{
+        padding: 0px;
+
+        .card-music{
+            margin: 5px;
+            height: 190px;
+            border-radius: 0px;
+            //box-shadow: 0px 0px;
+
+            .img-music{
+                height: 145px;
+                object-fit: cover;
+            }
+
+            .lbl-title{
+                position: absolute;
+                top: 22px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                font-size: 13px;
+            }
+
+            .lbl-music{
+                display: block;
+                text-align: left;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 5px;
+            }
+            .lbl-artist{
+                display: block;
+                text-align: left;
+                font-size: 10px;
+                font-weight: bold;
+                padding: 0px 0px 5px 5px;
+                color: #ccc;
+            }
+        }
+    }
+}
+
+.slides{
+    margin: 5px 10px 5px 10px;
+  
+    .slide{
+      height: 175px;
+      width: auto;
+
+      .card-common-lg{
+          margin: 0px;
+          border-radius: 0px;
+          box-shadow: 0px 0px;
+  
+            .img-card{
+                height: 130px;
+                width: 100%;
+                object-fit: cover;
+            }
+            .img-card-round{
+                border-radius: 50%;
+                //width: 150px;
+                //height: 150px;
+                object-fit: cover;
+            }
+            .lbl-title{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                font-size: 13px;
+                background-color: rgba(0,0,0,0.3);
+
+                .txt{
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+            }
+            .lbl-music{
+                display: block;
+                text-align: left;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 5px;
+            }
+            .lbl-artists{
+                display: block;
+                text-align: center;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 5px;
+            }
+            .lbl-artist{
+                display: block;
+                text-align: left;
+                font-size: 10px;
+                font-weight: bold;
+                padding: 0px 0px 5px 5px;
+                color: #ccc;
+            }
+            .lbl-artist-name{
+                display: block;
+                text-align: center;
+                font-size: 10px;
+                font-weight: bold;
+                padding: 0px 0px 5px 5px;
+                color: #ccc;
+            }
+        }
+    }
+  }
+
+//   .extra-round{
+//       //width: fit-content !important;
+//   }
+
+  .slides-sm{
+    margin: 5px 10px 5px 10px;
+  
+    .slide-sm{
+      height: 190px;
+      //width: 110px !important;
+
+      .card-common-sm{
+          margin: 0px;
+          border-radius: 0px;
+          box-shadow: 0px 0px;
+  
+            .img-card-sm{
+                //height: 110px;
+                //width: 100%;
+                object-fit: cover;
+            }
+            .lbl-artists{
+                display: block;
+                text-align: center;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 5px;
+            }
+            .lbl-artist-name{
+                display: block;
+                text-align: center;
+                font-size: 10px;
+                font-weight: bold;
+                padding: 0px 0px 5px 5px;
+                color: #ccc;
+            }
+        }
+    }
+  }

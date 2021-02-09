@@ -1,0 +1,48 @@
+.item{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 48px;
+
+    .lbl-logo{
+        width: 75px;
+    }
+    .lbl-title{
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
+
+.mid-div{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+
+    .imp-line{
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .imp-line2{
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+
+.btns{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+
+    .btn-signup{
+        margin: 20px 40px;
+        font-weight: bold;
+    }
+    .btn-signin{
+        margin: 20px 40px;
+        font-weight: bold;  
+    }
+}

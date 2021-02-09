@@ -1,0 +1,64 @@
+.div-search{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+
+    .img-search{
+        height: 80px;
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .lbl-find{
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+.div-found{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+
+    .img-found{
+        height: 80px;
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .lbl-found{
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .lbl-try{
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        padding: 0px 20px;
+    }
+}
+
+.items{
+    padding-bottom: 5px;
+    
+    .img-singer{
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+    .lbl-name{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

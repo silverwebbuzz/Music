@@ -1,14 +1,631 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+
+  <ion-label class="lbl-head">Hey</ion-label>
+
+  <ion-label class="lbl-line">Here are some playlists based on your music taste.</ion-label>
+
+  <ion-label class="lbl-divider">Made for you</ion-label>
+
+  <ion-row class="row-card">
+    <ion-col size="6" class="col-card" routerLink="/song-list">
+      <ion-card class="card-music">
+        <img src="../../assets/img/music.jpg" class="img-music" />
+        <!-- <ion-label class="lbl-title">New Music</ion-label> -->
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Arman Malik</ion-label>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-label class="lbl-divider">Recommended for you</ion-label>
+
+  <ion-slides [options]="slideOpts" class="slides">
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-music.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-img.png" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider">Recommended for today</ion-label>
+
+  <ion-slides [options]="slideOpts" class="slides">
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-music.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-img.png" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider">Your favorite artists</ion-label>
+
+  <ion-slides [options]="slideOptsRound" class="slides">
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-music1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-img1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider">Popular artists</ion-label>
+
+  <ion-slides [options]="slideOptsRound" class="slides">
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-music1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-img1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide extra-round">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music1.png" class="img-card-round" />
+        <ion-label class="lbl-artists">Artist Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider">Popular new releases</ion-label>
+
+  <ion-slides [options]="slideOpts" class="slides">
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-music.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-img.png" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music.jpg" class="img-card" />
+        <ion-label class="lbl-music">Music Name</ion-label>
+        <ion-label class="lbl-artist">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider-sm">Popular in gujarati</ion-label>
+
+  <ion-slides [options]="slideOptsSmall" class="slides-sm">
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-img1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider-sm">Popular and trending</ion-label>
+
+  <ion-slides [options]="slideOptsSmall" class="slides-sm">
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-img1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider-sm">Editors picks</ion-label>
+
+  <ion-slides [options]="slideOptsSmall" class="slides-sm">
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-img1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider-sm">Hindi new releases</ion-label>
+
+  <ion-slides [options]="slideOptsSmall" class="slides-sm">
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-img1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider-sm">Punjabi new releases</ion-label>
+
+  <ion-slides [options]="slideOptsSmall" class="slides-sm">
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-img1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider-sm">Gujarati new releases</ion-label>
+
+  <ion-slides [options]="slideOptsSmall" class="slides-sm">
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-img1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider-sm">Global new releases</ion-label>
+
+  <ion-slides [options]="slideOptsSmall" class="slides-sm">
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/no-img1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/singer1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-sm">
+      <ion-card class="card-common-sm">
+        <img src="../../assets/img/music1.png" class="img-card-sm" />
+        <ion-label class="lbl-artists">Music Name</ion-label>
+        <ion-label class="lbl-artist-name">Singer Name</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-label class="lbl-divider-sm">Because you like</ion-label>
+
+  <ion-slides [options]="slideOpts" class="slides">
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer-like.jpg" class="img-card" />
+        <ion-label class="lbl-title">This is <br>
+          <ion-text class="txt">Sonu Nigam</ion-text>
+        </ion-label>
+        <ion-label class="lbl-music">This Bollywood Singer Biggest Hits.</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music.jpg" class="img-card" />
+        <ion-label class="lbl-title">This is <br>
+          <ion-text class="txt">Sonu Nigam</ion-text>
+        </ion-label>
+        <ion-label class="lbl-music">This Bollywood Singer Biggest Hits.</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-music.jpg" class="img-card" />
+        <ion-label class="lbl-title">This is <br>
+          <ion-text class="txt">Sonu Nigam</ion-text>
+        </ion-label>
+        <ion-label class="lbl-music">This Bollywood Singer Biggest Hits.</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/no-img.png" class="img-card" />
+        <ion-label class="lbl-title">This is <br>
+          <ion-text class="txt">Sonu Nigam</ion-text>
+        </ion-label>
+        <ion-label class="lbl-music">This Bollywood Singer Biggest Hits.</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/singer-like.jpg" class="img-card" />
+        <ion-label class="lbl-title">This is <br>
+          <ion-text class="txt">Sonu Nigam</ion-text>
+        </ion-label>
+        <ion-label class="lbl-music">This Bollywood Singer Biggest Hits.</ion-label>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide">
+      <ion-card class="card-common-lg">
+        <img src="../../assets/img/music.jpg" class="img-card" />
+        <ion-label class="lbl-title">This is <br>
+          <ion-text class="txt">Sonu Nigam</ion-text>
+        </ion-label>
+        <ion-label class="lbl-music">This Bollywood Singer Biggest Hits.</ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
 </ion-content>

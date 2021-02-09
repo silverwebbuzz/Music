@@ -1,0 +1,114 @@
+.tool{
+    --border-width: 0px !important;
+}
+.img-music{
+    height: 155px;
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0px;
+    object-fit: cover;
+}
+.lbl-title{
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+.lbl-head{
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+}
+.lbl-popular{
+    display: block;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    color: #ccc;
+    margin: 10px 0px 10px 0px;
+}
+.btn-divider{
+    background: transparent;
+    --padding-end: 8px;
+    padding-bottom: 10px;
+
+    .btn{
+       height: 44px;
+       width: 35%; 
+       margin: 0 auto;
+       font-weight: bold;
+    }
+}
+
+.lbl-music{
+    font-size: 14px;
+    color: #000;
+}
+.lbl-artist{
+    font-size: 12px;
+    color: #ccc;
+}
+.btns{
+    margin: 0px;
+    --padding-end: 3px;
+    --padding-start: 3px;
+
+    .icon-btn{
+        height: 32px;
+        width: 23px;
+    }
+}
+
+.lbl-divider{
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.row-card{
+    padding: 0px 5px 0px 5px;
+
+    .col-card{
+        padding: 0px;
+
+        .card-music{
+            margin: 5px;
+            height: 175px;
+            border-radius: 0px;
+            //box-shadow: 0px 0px;
+
+            .img-music{
+                height: 145px;
+                object-fit: cover;
+            }
+
+            .lbl-title{
+                position: absolute;
+                top: 22px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                font-size: 13px;
+            }
+
+            .lbl-cat{
+                display: block;
+                text-align: center;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 5px;
+            }
+        }
+    }
+}

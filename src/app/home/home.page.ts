@@ -7,6 +7,21 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  slideOpts = {
+    slidesPerView : 1.7,
+    spaceBetween : 10,
+  };
+
+  slideOptsRound = {
+    slidesPerView : 'auto',
+    spaceBetween : 10,
+  };
+
+  slideOptsSmall = {
+    slidesPerView : 2.5,
+    spaceBetween : 10,
+  };
+
   constructor() {}
 
 }

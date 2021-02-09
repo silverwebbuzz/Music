@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-button color="primary" (click)="back()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="primary" class="head">Sign up</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+<ion-content padding>
+
+    <img src="../../assets/img/logo.png" class="lbl-logo" />
+    
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-lbl">Full name</ion-label>
+      <ion-input type="text" class="input-box"></ion-input>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-lbl">Email address</ion-label>
+      <ion-input type="email" class="input-box"></ion-input>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-lbl">Password</ion-label>
+      <ion-input type="password" class="input-box"></ion-input>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-lbl">Confirm Password</ion-label>
+      <ion-input type="password" class="input-box"></ion-input>
+    </ion-item>
+    
+    <div class="btns-bottom">
+    
+      <ion-label class="lbl-signup">Already have an account? <ion-text color="primary" routerLink="/signin"> Log in.
+        </ion-text>
+      </ion-label>
+    
+      <ion-button expand="full" shape="round" class="btn-signin">LOG IN</ion-button>
+    
+    </div>
+
+</ion-content>

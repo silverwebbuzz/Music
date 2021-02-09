@@ -1,0 +1,20 @@
+.div-find{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+
+    .img-find{
+        height: 80px;
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .lbl-find{
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+    }
+}

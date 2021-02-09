@@ -1,0 +1,63 @@
+.tool{
+    --border-width: 0px !important;
+}
+.lbl-head{
+    font-weight: bold;
+    font-size: 28px;
+    display: block;
+    text-align: center;
+    margin-top: 14px;
+}
+.lbl-popular{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin: 28px 0px 10px 0px;
+}
+.row-card{
+    padding: 0px 5px 0px 5px;
+
+    .col-card{
+        padding: 0px;
+
+        .card-music{
+            margin: 5px;
+            height: 190px;
+            border-radius: 0px;
+            //box-shadow: 0px 0px;
+
+            .img-music{
+                height: 145px;
+                object-fit: cover;
+            }
+
+            .lbl-title{
+                position: absolute;
+                top: 22px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                font-size: 13px;
+            }
+
+            .lbl-cat{
+                display: block;
+                text-align: center;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 5px;
+            }
+            .lbl-follow{
+                display: block;
+                text-align: center;
+                font-size: 10px;
+                font-weight: bold;
+                padding-bottom: 5px;
+                color: #ccc;
+            }
+        }
+    }
+}

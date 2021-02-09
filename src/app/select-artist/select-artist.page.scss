@@ -1,0 +1,45 @@
+.lbl-head{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+.search{
+    padding: 0px 16px;
+    margin-bottom: 15px;
+    height: 40px;
+}
+.col-card{
+    text-align: center;
+  
+    .check{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .img-singer{
+        height: 75px;
+        width: 75px;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+    .lbl-name{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+.btns-bottom{
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: fixed;
+    bottom: 4%;
+
+    .btn-signin{
+        width: 50%;
+        margin: auto;
+        font-weight: bold;
+    }
+
+}
